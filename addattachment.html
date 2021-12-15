@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add Attachment</title>
+    <style>
+      #container {
+          background-color: rgb(224, 253, 255);
+        border: 0.5px solid black;
+        border-radius: 10px;
+        width: 400px;
+        margin: 0 auto;
+        height: 380px;
+        display: flexbox;
+        flex-direction: row;
+        justify-content: left;
+        padding: 10px;
+      }
+      p {
+          margin-top: 0;
+          margin-bottom: 3px;
+          font-weight: bold;
+      }
+
+    }
+      #choosefile {
+        position: relative;
+        left: 0px;
+        top: 5px;
+      }
+
+      #selectfiles {
+        position: relative;
+        left: 0px;
+        top: 20px;
+        font-weight: bold;
+      }
+
+      #container2 {
+          background-color: white;
+        border: 0.5px solid black;
+        width: 375px;
+        margin: 0 auto;
+        height: 70px;
+        display: flexbox;
+        flex-direction: row;
+        justify-content: left;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      
+      #Text {
+        position: relative;
+        left: 0px;
+        top: 40px;
+        font-weight: bold;
+      }
+      textarea {
+        background-color: white;
+        width: 375px;
+        margin: 0 auto;
+        height: 70px;
+        display: flexbox;
+        flex-direction: row;
+        justify-content: left;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      #checkbox {
+          text-align: right;
+          position: relative; left: 0px; top: 50px;
+      }
+      #okButton {
+          text-align: right;
+          position: relative; left: 0px; top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+         <p>Please choose File</p>
+        <div id="choosefile">
+          <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename" />
+          </form>
+        </div>
+          <div id="selectfiles">
+            Selected files:
+            <div id="container2"></div>
+          </div>
+          <div id="Text">
+            Text:
+  <textarea rows="4" cols="50" name="comment"></textarea>
+        </div>
+            <div id="checkbox">
+              <input type="checkbox" />
+              <label for="checkbox">Private attachment</label>
+            </div>
+<div id="okButton">
+            <form>
+              <input type="button" value="Ok" />
+            <form>
+              <input type="button" value="Cancel" />
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
