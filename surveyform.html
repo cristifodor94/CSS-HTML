@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>Survey</title>
+<style>
+body {
+    background-color: lightsteelblue;
+}
+#title {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+#container { 
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Franklin Gothic';
+}
+input[type=text] {
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+input[type=number] {
+    width: 30px;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+select {
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+input[type=radio] {
+    transform: scale(2);
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+textarea {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+input[type=submit] {
+    width: 100px;
+    height: 50px;
+    background-color: limegreen;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+    <div id="title">
+    <h1 style="font-family: 'Franklin Gothic';">Employees opinion form</h1>
+</div>
+    <div id="container">
+        
+        <h1>Work from Home or work from Office?</h1>
+<form> 
+    <label for="Name">Name</label>
+    <input type="text" id="Name" name="Name" 
+    placeholder="Enter your name"> <br>
+    <label for="Email">Email</label>
+    <input type="text" id="Email" name="Email" 
+    placeholder="Enter your Email"> <br>
+<label for="workfromhome">On a scale of 1-10, how do you feel about working from Home?</label>
+<input type="number" id="workfromhome" name="workfromhome" min="1" max="10" value="1"> <br>
+<label for="workfromoffice">On a scale of 1-10, how do you feel about working from Office?</label>
+<input type="number" id="workfromoffice" name="workfromoffice" min="1" max="10" value="1"> <br>
+<label for="workHybrid">On a scale of 1-10, how do you feel about working Hybrid?</label>
+<input type="number" id="workHybrid" name="workHybrid" min="1" max="10" value="1"> <br>
+<label for="preferences">What do you prefer?</label>
+<select name="preferences" id="preferences">
+    <option value="Work from Home">Work from Home</option>
+    <option value="Work from Office">Work from Office</option>
+    <option value="Hybrid">Hybrid</option> <br> </select>
+    <p>Are you satisfied with the working options our company provides you?</p>
+    <input type="radio" id="satisfaction" name="satisfaction" value="YES">
+    <label for="YES">YES</label><br>
+    <input type="radio" id="satisfaction" name="satisfaction" value="YES">
+    <label for="NO">NO</label> <br>
+     <p>Please describe in a few words your experience with our Company:</p>
+<textarea name="describe" id="describe" cols="30" rows="10"></textarea> <br>
+<input type="submit" value="Submit">
+</form>
+    </div>
+</body>
+</html>
